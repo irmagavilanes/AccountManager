@@ -1,0 +1,136 @@
+{
+	"id": "e6890e06-2082-1f8e-90bb-63daf9664dd3",
+	"name": "Account",
+	"description": "",
+	"order": [
+		"3127ee65-7b76-79f2-4235-2411c77becd2",
+		"f13b384e-c741-9398-0419-41f1b824f8c4",
+		"fea25f85-89f9-2bfc-7942-154adffa0ba1",
+		"367ad237-c789-08aa-0908-c2e8918a214d"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1647155121472,
+	"owner": "2604596",
+	"public": false,
+	"requests": [
+		{
+			"id": "3127ee65-7b76-79f2-4235-2411c77becd2",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://192.168.100.114:8080/api/cliente",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1647197535925,
+			"name": "Guardar Cliente",
+			"description": "",
+			"collectionId": "e6890e06-2082-1f8e-90bb-63daf9664dd3",
+			"responses": [],
+			"rawModeData": "{\n\"nombre\":\"Danilo P\",\n\"genero\":\"Masculino\",\n\"edad\":25,\n\"identificacion\":\"47777577547584\",\n\"direccion\":\"Quito\",\n\"telefono\":\"122345\",\n\"contrasenia\":\"333333\"\n}"
+		},
+		{
+			"id": "367ad237-c789-08aa-0908-c2e8918a214d",
+			"headers": "",
+			"headerData": [],
+			"url": "http://192.168.100.114:8080/api/cliente?clienteId=1",
+			"queryParams": [
+				{
+					"key": "clienteId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1647197540724,
+			"name": "Eliminar Cliente",
+			"description": "",
+			"collectionId": "e6890e06-2082-1f8e-90bb-63daf9664dd3",
+			"responses": []
+		},
+		{
+			"id": "f13b384e-c741-9398-0419-41f1b824f8c4",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://192.168.100.114:8080/api/cliente",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1647197537515,
+			"name": "Actualizar Cliente",
+			"description": "",
+			"collectionId": "e6890e06-2082-1f8e-90bb-63daf9664dd3",
+			"responses": [],
+			"rawModeData": "{\n\"clienteId\": 33,\n\"nombre\":\"Diego Fernando\",\n\"genero\":\"Masculino\",\n\"edad\":40,\n\"identificacion\":\"47777577547584\",\n\"direccion\":\"Quito\",\n\"telefono\":\"0995762813\",\n\"contrasenia\":\"333333\"\n}"
+		},
+		{
+			"id": "fea25f85-89f9-2bfc-7942-154adffa0ba1",
+			"headers": "",
+			"headerData": [],
+			"url": "http://192.168.100.114:8080/api/cliente?clienteId=33",
+			"queryParams": [
+				{
+					"key": "clienteId",
+					"value": "33",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1647197539151,
+			"name": "Obtener Cliente",
+			"description": "",
+			"collectionId": "e6890e06-2082-1f8e-90bb-63daf9664dd3",
+			"responses": []
+		}
+	]
+}
